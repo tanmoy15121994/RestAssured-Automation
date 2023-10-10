@@ -26,15 +26,6 @@ public class StoreEndPoints {
 		return response;
 	}
 
-	public static Response getStoreOrder() {
-		Response response = given()
-				.contentType(ContentType.JSON)
-				.accept(ContentType.JSON)
-				.when()
-				.get("https://petstore.swagger.io/v2/store/order/5");
-
-		return response;
-	}
 
 	public static Response getStoreInventory() {
 		Response response = given()

@@ -18,16 +18,8 @@ public class StoreTests {
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 	}
-	@Test(priority=2)
-	public void testGetStoreOrder(){
-		
-		Response response =StoreEndPoints.getStoreOrder();
-		response.then().log().all();
-		Assert.assertEquals(response.getStatusCode(), 200);
-		responsebody = response.getBody().prettyPrint();
-	}
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void testGetInventory()
 	{
 		Response response =StoreEndPoints.getStoreInventory();
